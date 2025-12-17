@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/home.css">
+</head>
+<body>
+    <!-- ========== HEADER ========== -->
+
+    
+<header class="site-header">
+    <div class="logo" onclick="location.href='index.html'">iCeBuy</div>
+
+    <div class="menu-btn" id="menu-btn">☰</div>
+
+    <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+         <a href="auth.html">Login</a>
+        
+    </nav>
+
+    <div class="icons">
+        <div class="theme-toggle" id="theme-toggle">🌙</div>
+
+        <div class="wishlist-icon" onclick="location.href='wishlist.html'">
+            ❤️ <span id="wishlist-count">0</span>
+        </div>
+
+        <div class="cart-icon" onclick="location.href='cart.html'">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </div>
+</header>
+
+
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover the Latest Deals</h1>
+            <p>Shop trending products at the best prices.</p>
+            <a href="products.html" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- CATEGORY SECTION -->
+    <section class="category-section">
+        <h2>Shop by Category</h2>
+        <div class="categories">
+            <div class="category-card">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.YCm1f5uraZBk3gIrQ7MpoAHaD2?pid=Api&P=0&h=180" alt="Mobiles">
+                <p>Mobiles</p>
+            </div>
+            <div class="category-card">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.ejs8uD5aFnJaiDLwOO-khQHaE7?pid=Api&P=0&h=180" alt="Laptops">
+                <p>Laptops</p>
+            </div>
+            <div class="category-card">
+                <img src="https://tse3.mm.bing.net/th/id/OIF.mECwPc9ZDDfgbvwVgMC0xQ?pid=Api&P=0&h=180" alt="Fashion">
+                <p>Fashion</p>
+            </div>
+            <div class="category-card">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.0gYHV8YgbibMUPK-yjJoswHaEK?pid=Api&P=0&h=180" alt="TVs">
+                <p>Electronics</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+    <section class="featured">
+        <h2>Best Sellers</h2>
+        <div id="featured-products" class="product-grid"></div>
+    </section>
+
+    
+
+
+<script src="./scripts/home.js"></script>
+
+</body>
+</html>
