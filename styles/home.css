@@ -64,6 +64,7 @@ body {
 /* HERO */
 .hero {
     min-height: 80vh;
+     background: url("https://png.pngtree.com/background/20230413/original/pngtree-business-e-shopping-picture-image_2422998.jpg") center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,3 +134,4 @@ body {
         font-size: 2rem;
     }
 }
+
