@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout — iCeBuy</title>
+    <link rel="stylesheet" href="styles/checkout.css">
+    <link rel="stylesheet" href="styles/headerfooter.css">
+
+    <style>
+        /* ===== LOGOUT BUTTON ===== */
+.logout-btn {
+    width: 100px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: #d81616; /* deep red */
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease; /* smooth hover transition */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.logout-btn:hover {
+    background-color: #ff4d4d; /* lighter red on hover */
+    transform: translateY(-2px); /* small lift effect */
+    box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+}
+
+.logout-btn:active {
+    background-color: #b31313; /* darker red on click */
+    transform: translateY(0); /* remove lift */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .logout-btn {
+        width: 90%;
+        max-width: 130px;
+        height: 30px;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-left: 140px;
+    }
+}
+
+    </style>
+</head>
+<body>
+<header class="site-header">
+    <div class="logo" onclick="location.href='index.html'">iCeBuy</div>
+
+    <div class="menu-btn" id="menu-btn">☰</div>
+
+    <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="auth.html" id="login-link">Login</a>
+        <span id="userName"></span>
+        <button id="logoutBtn" class="logout-btn" >Logout</button>
+    </nav>
+
+    <div class="icons">
+        <div class="cart-icon" onclick="location.href='cart.html'">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </div>
+</header>
+
+<section class="checkout-container">
+    <h2>Checkout</h2>
+
+    <div id="checkout-items"></div>
+
+    <div class="checkout-summary">
+        <h3>Total: ₹<span id="checkout-total">0</span></h3>
+        <button id="place-order-btn" class="btn primary">Place Order</button>
+    </div>
+</section>
+
+<script src="scripts/checkout.js"></script>
+<script src="scripts/headerfooter.js"></script>
+</body>
+</html>

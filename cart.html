@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="styles/cart.css">
+    <link rel="stylesheet" href="styles/headerfooter.css">
+
+    <style>
+        .logout-btn {
+    background: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    display: none;
+}
+
+.logout-btn:hover {
+    background: #e60000;
+}
+
+
+@media (max-width: 768px) {
+    .logout-btn {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="logo" onclick="location.href='index.html'">iCeBuy</div>
+
+    <div class="menu-btn" id="menu-btn">☰</div>
+
+    <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="auth.html" id="login-link">Login</a>
+        <span id="userName"></span>
+
+        <button id="logoutBtn" style="display:none;">Logout</button>
+    </nav>
+
+    <div class="icons">
+        
+
+        <div class="cart-icon" onclick="goCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </div>
+</header>
+
+
+<section class="cart-container">
+    <h2>Your Shopping Cart</h2>
+
+    <div id="cart-items"></div>
+
+    <div class="cart-summary">
+        <h3>Total: ₹<span id="total-price">0</span></h3>
+        <div class="cart-buttons">
+            <a href="products.html" class="btn secondary">Continue Shopping</a>
+            <button id="checkoutBtn" class="btn primary" disabled>Proceed to Checkout</button>
+        </div>
+    </div>
+</section>
+
+<script src="scripts/cart.js"></script>
+<script src="./scripts/headerfooter.js"></script>
+</body>
+</html>

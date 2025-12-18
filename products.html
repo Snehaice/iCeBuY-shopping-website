@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products — iCeBuy</title>
+    <link rel="stylesheet" href="styles/product.css" />
+    <link rel="stylesheet" href="styles//headerfooter.css">
+    
+</head>
+
+<body>
+
+
+  <!-- ========== HEADER ========== -->
+<header class="site-header">
+    <div class="logo" onclick="location.href='index.html'">iCeBuy</div>
+
+    <div class="menu-btn" id="menu-btn">☰</div>
+
+    <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        
+    </nav>
+
+    <div class="icons">
+        
+
+        
+
+        <div class="cart-icon" onclick="location.href='cart.html'">
+            🛒 <span id="cart-count"></span>
+        </div>
+    </div>
+</header>
+
+
+    <!-- Header -->
+    <header id="main-header"></header>
+
+    <section class="products-page">
+
+        <!-- FILTERS BAR -->
+        <div class="filter-bar">
+
+            <!-- Search -->
+            <input type="text" id="searchInput" placeholder="Search products...">
+
+            <!-- Category -->
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+            </select>
+
+            <!-- Sort -->
+            <select id="sortFilter">
+                <option value="default">Sort By</option>
+                <option value="low-high">Price: Low to High</option>
+                <option value="high-low">Price: High to Low</option>
+                <option value="az">A → Z</option>
+                <option value="za">Z → A</option>
+            </select>
+        </div>
+
+        <!-- Product Grid -->
+        <div id="productGrid" class="product-grid"></div>
+    </section>
+
+    
+
+    
+
+    
+    <script src="scripts/product.js"></script>
+    
+    <script src="scripts/headerfooter.js"></script>
+</body>
+
+</html>
