@@ -1,0 +1,83 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family:Arial,sans-serif; }
+
+body { background:linear-gradient( #3e3e3e); display:flex; flex-direction:column; align-items:center; }
+
+.auth-container { 
+    width: 100%; max-width:400px; margin:50px auto; background:#111; padding:20px; border-radius:10px; box-shadow:0 15px 40px rgba(0,0,0,0.1) ; border: 1px solid #222; 
+}
+
+.auth-form { display:flex; flex-direction:column; gap:15px;  }
+
+.auth-form.hidden { display:none; }
+
+label { font-weight:600;color: #ccc; }
+
+input { padding:10px; border:1px solid #333; border-radius:5px; width:100%; background-color:#1b1b1b; color: #fff; font-size: 16px;}
+
+button { padding:10px; border:none; border-radius:7px; background:linear-gradient(135deg, #ff6a00, #ff3d00); color:#fff; font-weight:bold; cursor:pointer; }
+
+button:hover { background:#e93511; }
+
+.form-toggle { display:flex; justify-content:space-around; margin-bottom:20px; }
+.form-toggle button { flex:1; padding:10px; cursor:pointer; background:#7a7878; border:none; font-weight:bold; }
+.form-toggle button.active { background:linear-gradient(135deg, #ff6a00, #ff3d00); color:#fff; }
+
+.switch-text { text-align:center; font-size:0.9rem; color: #ff6a00;}
+.switch-text span { color:#eff1f4; cursor:pointer; }
+
+.toggle-password { cursor:pointer; font-size:0.9rem; position:absolute; right:15px; top:45px; }
+
+
+/* ===== TABLET RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .auth-container {
+        padding: 22px;
+    }
+
+    input {
+        font-size: 15px;
+        padding: 11px;
+    }
+
+    button {
+        padding: 11px;
+        font-size: 0.95rem;
+    }
+
+    .form-toggle button {
+        padding: 11px;
+    }
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 480px) {
+    .auth-container {
+        padding: 18px;
+        width: 250px;
+        
+        
+    }
+
+    label {
+        font-size: 0.85rem;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .form-toggle button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .switch-text {
+        font-size: 0.85rem;
+    }
+}

@@ -1,0 +1,134 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+   background: url("https://png.pngtree.com/background/20230413/original/pngtree-business-e-shopping-picture-image_2422998.jpg") center/cover no-repeat;
+}
+
+/* ===== CART CONTAINER ===== */
+.cart-container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  
+}
+
+.cart-container h2 {
+  margin-bottom: 20px;
+}
+
+/* ===== CART ITEM ===== */
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.cart-details {
+  flex: 1;
+}
+
+.cart-details h4 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.cart-details p {
+  margin-bottom: 8px;
+}
+
+/* ===== QUANTITY ===== */
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-control button {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: #1b2f52;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* ===== REMOVE BUTTON ===== */
+.remove-btn {
+  background: crimson;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ===== SUMMARY ===== */
+.cart-summary {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.cart-buttons {
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 10px 14px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.primary {
+  background: linear-gradient(135deg, #ff6a00, #ff3d00);
+  color: #fff;
+}
+
+.secondary {
+  background: #ddd;
+  color: #000;
+}
+
+/* ===== EMPTY CART ===== */
+.empty-cart {
+  text-align: center;
+  padding: 40px 0;
+  color: #555;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .cart-item {
+    flex-direction: column;
+    text-align: center;
+    
+  }
+
+  
+
+  .cart-details {
+    width: 50%;
+  }
+
+  .cart-summary {
+    text-align: center;
+  }
+}

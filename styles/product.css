@@ -1,0 +1,129 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.products-page {
+    padding: 30px 7%;
+     background: url("https://png.pngtree.com/background/20230413/original/pngtree-business-e-shopping-picture-image_2422998.jpg") center/cover no-repeat;
+    
+}
+
+.filter-bar {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.filter-bar input,
+.filter-bar select {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    min-width: 180px;
+    font-size: 1rem;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    
+    
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.btn-view {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff5722;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    border: none;
+}
+
+
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+    .products-page {
+        padding: 25px 5%;
+    }
+
+    .product-card img {
+        height: 180px;
+    }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+    .products-page {
+        padding: 20px;
+    }
+
+    .filter-bar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .filter-bar input,
+    .filter-bar select {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .product-card img {
+        height: 160px;
+    }
+
+    .price {
+        font-size: 1.1rem;
+    }
+
+    .btn-view {
+        padding: 9px 18px;
+        font-size: 0.95rem;
+    }
+}
+
+/* ===== SMALL MOBILE ===== */
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 15px;
+    }
+
+    .product-card {
+        padding: 12px;
+    }
+
+    .product-card img {
+        height: 140px;
+    }
+}
